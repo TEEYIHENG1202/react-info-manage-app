@@ -1,0 +1,303 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html
+{
+    height:100%;
+}
+
+body
+{
+    height:100%;
+}
+
+#root
+{
+    height: 100%;
+}
+
+.login
+{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm
+{
+    height:500px;
+    width: 350px;
+    border: 3px solid black;
+    display: flex;
+    padding:20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm h1
+{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom:20px;
+}
+
+.loginForm input
+{
+    width:100%;
+    font-size: 30px;
+}
+
+.forgetPW
+{
+    cursor:pointer;
+}
+
+.confirm
+{
+    position: absolute;
+    height:250px;
+    width: 300px;
+    border: 3px solid black;
+    padding:10px;
+    background-color: white;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+}
+
+.confirm .close
+{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    font-size: 30px;
+    margin:5px;
+}
+
+.confirm h1
+{
+    text-align: center;
+}
+
+.confirm div
+{
+    text-align: justify;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.confirm ul
+{
+    list-style-position: inside;
+}
+
+.confirm input
+{
+    width: 100%;
+}
+
+.defaultEmail
+{
+    border:1px solid black;
+    margin-top:20px;
+    padding:20px;
+}
+
+.header nav
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    overflow:auto;
+    font-size:30px;
+}
+
+.header nav a
+{
+    color:white;
+    text-decoration: none;
+    margin:10px;
+}
+
+.header nav a.active
+{
+    color:red;
+}
+
+.header::-webkit-scrollbar
+{
+    width:10px;
+}
+
+.header::-webkit-scrollbar-thumb
+{
+background-color: grey;
+}
+
+.dashboardContainer
+{
+    height:100%;
+    width:100%;
+    padding:20px;
+}
+
+.dashboardContainer h1, .dashboardContainer h2
+{
+    text-align: center;
+}
+
+.dashboard
+{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+}
+
+.white,.black,.user
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.WBPercentage,.userPercentage
+{
+margin:10px;
+}
+
+.white div,.black div,.user div
+{
+height:150px;
+width:150px;
+border: 3px solid black;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+}
+
+.percentage
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main
+{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub
+{
+    height:90%;
+    overflow:scroll;
+    display: flex;
+}
+
+.whiteListContainer,.blackListContainer,.userContainer
+{
+    width: 100%;
+    padding:30px;
+}
+
+.whiteListManage h1,.blackListManage h1,.userManage h1
+{
+    padding-bottom:20px;
+}
+
+.formText,.whiteListForm input,.blackListForm input,.userForm input,.userForm select
+{
+    display: inline-block;
+    width:250px;
+    font-size:20px;
+}
+
+.whiteListContent .whiteListTable,.blackListContent .blackListTable,.userContent .userTable
+{
+    margin-top:30px;
+    width:100%;
+}
+
+.formText
+{
+    font-weight: bold;
+}
+
+.profile
+{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    border:5px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: auto; 
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom:0;
+    background-color: white;
+}
+
+.profile h1
+{
+    text-align: center;
+}
+
+.profile .close
+{
+    height:50px;
+    width:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right:0px;
+    font-size:30px;
+}
+
+.profile .profileTable
+{
+    width:100%;
+    padding:10px;
+}
+
+.profile .profileTable th,.profile .profileTable td
+{
+    border:2px solid;
+}
+
+@media (max-width:800px)
+{   
+    .white div,.black div,.user div
+    {
+        height:100px;
+        width:100px;
+    }
+
+    .percentage
+    {
+        flex-direction: column;
+    }
+}
