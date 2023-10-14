@@ -1,0 +1,4 @@
+This is a Info Manage App(React App)
+- Accessed by two type of user which are manager and normal user
+- Just manager can create, update and delete the info
+- Normal user just able to view the info
